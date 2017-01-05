@@ -13,4 +13,11 @@ export class AppComponent {
         id: 1,
         name: 'Windstorm'
     };
+
+    imageUrl = "http://lorempixel.com/400/200/";
+    isActive = true;
+
+    onClick($event) {
+        console.log($event);
+    }
 }

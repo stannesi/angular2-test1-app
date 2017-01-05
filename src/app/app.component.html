@@ -6,3 +6,16 @@
 <authors></authors>
 
 <input [(ngModel)]="hero.name" placeholder="name">
+<input bindon-ngModel="hero.name" placeholder="name">
+
+<button [style.backgroundColor]="isActive ? 'blue' : 'grey'">Submit</button>
+
+    <button (click)="onClick($event)" >Click-1</button>
+
+    <button on-click="onClick()" >Click-2</button>
+<br>
+
+<br>
+<img src="{{ imageUrl }}" />
+<img [src]="imageUrl" />
+<img bind-src="imageUrl" />
